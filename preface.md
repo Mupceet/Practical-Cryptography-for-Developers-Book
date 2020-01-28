@@ -1,26 +1,44 @@
-# Preface
+# 前言
 
 You are a **software developer**? And sometimes you need to use **cryptography** in your daily job, like hashes, encryption or digital signatures? And you think cryptography is complex and full of math and it is for nerds only? No, this is not true, every developer can learn **how to use cryptographic algorithms**. This book will show you how: with code examples and hands-on coding experience, with less math and more practice.
 
+你是一名**软件开发人员**吗？ 你是否在日常工作中有时候需要使用**密码学**知识，例如哈希，加密或数字签名？你是否认为密码学太复杂并且充满了数学知识，只有“书呆子”能理解？ 不，事实并非如此，每个开发人员都可以学会“**如何使用加密算法**“。本书将通过少量的数学知识、更多的示例代码与编程练习教会你如何使用。
+
 It is not required to be а strong mathematician or even not strong mathematician to **understand the cryptographic concepts from the developer perspective**. This book will teach you the basics of **applied cryptography** in almost free of math style, following a step-by-step approach with lots of **code examples** and **practical exercises** \(hands-on experience\), just like when you learn Web development, databases or mobile apps. Yes, if you can learn Web development or RESTful services, you can learn the practical aspect of cryptography as well. It is just like learning a new API or a new Web development framework: you learn a combination of **concepts** + **APIs** \(crypto algorithms implemented in crypto libraries\) + **tools** + **best practices** how to use these APIs and tools.
+
+**从开发人员的角度理解密码学概念**并不需要你是一名数学家，当然更不必是一名优秀的数学家。就像学习 Web 开发，数据库或移动应用开发一样，本书将几乎没有数学推导，而是通过大量的**示例代码**和**实际练习**（动手实践）教你一步步地学会**应用密码学**的基础知识。这意味着如果你可以学会 Web 开发或 RESTful 服务，那么你同样可以学会实用密码学。你将学会**概念** + **API**（在加密库中实现的加密算法）+ **工具** + 使用这些 API 和工具的**最佳实践**，正如学习新的 API 或新的 Web 开发框架一样。
 
 From this book you will learn **how to use cryptographic algorithms and cryptosystems** like hashes, MAC codes and key derivation functions \(KFD\), random generators, key exchange protocols, symmetric ciphers, encryption schemes, asymmetric cryptosystems, public-key cryptography, elliptic curves, digital signatures and quantum-safe crypto algorithms, together with modern cryptographic tools and libraries.
 
-I am happy to publish this free **developer-friendly practical cryptography book**. ****It holds just **what developers need to know** in order to **use cryptography in their every day work**. It does not cover the internals of the algorithms and how to design symmetric ciphers, public-key cryptosystems or authentication schemes. It covers the basic understanding of the **core cryptographic concepts** and how to use them from developer's perspective: **libraries**, **tools**, **code examples**. This is what most developers need to know about cryptography. This is what this book gives to you for free.
+从这本书中，你将学会**如何使用密码算法和密码系统**，例如哈希、MAC代码和密钥推导函数（KFD）、随机生成器、密钥交换协议、对称密码、加密方案、非对称密码系统、公共密钥密码学、椭圆曲线、数字签名和量子安全加密算法，以及现代加密工具和库。
 
-## This Book is for Developers!
+I am happy to publish this free **developer-friendly practical cryptography book**. It holds just **what developers need to know** in order to **use cryptography in their every day work**. It does not cover the internals of the algorithms and how to design symmetric ciphers, public-key cryptosystems or authentication schemes. It covers the basic understanding of the **core cryptographic concepts** and how to use them from developer's perspective: **libraries**, **tools**, **code examples**. This is what most developers need to know about cryptography. This is what this book gives to you for free.
+
+我很高兴出版这本**对开发人员友好的实用密码学书籍**，它是用来学习**开发人员在日常工作中使用加密技术所需的知识**。它不涉及算法的内部原理或如何设计对称密码、公钥密码系统或身份验证方案，而是只涵盖了**核心密码学概念**的基本理解以及从开发人员的角度如何使用它们：**库**，**工具**，**示例代码**。这正是大多数开发人员需要了解的密码学知识。
+
+## 这本书适合开发人员！
 
 This book is designed **for developers** who write code every day, for **software engineers** who create software systems, Web applications, mobile apps and other software. It may be useful also for **DevOps engineers** who deal with crypto algorithms and write code to automate the IT infrastructure, for **system administrators**, who want to learn practical cryptography better, for **information security engineers**, who need to deal with cryptography every day and to know which ciphers and crypto algorithms are safe and which are broken, along with the possible attacks, for experienced **QA engineers** who perform security testing and code reviews about security and cryptography, and for many other **IT professionals**.
 
+本书适用于以下每天编写代码的**开发人员**：开发软件系统、Web 应用程序、移动应用程序和其他软件的**软件工程师**；需要处理加密算法并编写代码以使 IT 基础架构自动化的 **DevOps 工程师**；希望更好地学习实用密码学的**系统管理员**；每天需要处理密码学并了解哪种密码和加密算法是安全的，哪些会被破坏以及可能的攻击手段信息的**信息安全工程师**；执行安全性测试和审查有关安全性和加密技术代码的经验丰富的 **QA 工程师**; 以及其他 **IT 专业人员**。
+
 This book is about **using crypto algorithms** and cryptographic packages, not about designing ciphers, signature schemes and cryptosystems. You will learn how cryptosystems work \(without too much math\) and how to use them in your daily job. This book is not 100% free of math, but the complexity level is reduced to match the average developer's level, and complex concepts are explained in simplified and understandable style. This book is created **by developers for developers**, not by university professors or mathematicians. It is about coding in a smart way, with understanding the concepts and **using the crypto algorithms and crypto libraries the right way**. It is about the modern crypto algorithms and cryptographic techniques, used today in the software industry \(as of Nov 2018\).
+
+这本书是介绍**使用密码算法**和密码库的，而不是介绍设计密码、签名方案或密码系统的。你将学会密码系统是如何工作（无需过多的数学推导）以及如何在日常工作中使用它们。本书并非完全没有数学知识，但降低了复杂度以适应普通开发人员的水平，并且以简化且易于理解的方式解释了复杂的概念。本书是**由开发人员为开发人员**创建的，而不是由大学教授或数学家创建的。它通过理解概念和**正确的加密算法和加密库使用方式**来学习如何编码。它涉及当今软件行业中使用的现代加密算法和加密技术（截至 2018 年 11 月）。
 
 We assume that most developers use **higher level programming languages** \(such as JavaScript, Python, C\#, Java and PHP\), so most code examples in the book are given in **Python**, which can be translated to other languages with ease.
 
-## This Book is Free!
+我们假设大多数开发人员使用**高级编程语言**（例如 JavaScript，Python，C＃，Java 和 PHP），因此本书中的大多数示例代码都是使用 **Python** 给出的，它们可以轻松地翻译为其他语言。
+
+## 这本书完全免费！
 
 The main book author **Dr. Svetlin Nakov** donates this book and its entire content and code examples **for free** to the developer and IT community as **open-source project**, under [the MIT license](https://opensource.org/licenses/MIT). Why? Because the main book author and the people behind this project believe that the **knowledge is for everyone** and it should be **shared for free**, because developers should learn to use cryptography the right way, because our world needs more secure software, because **sharing knowledge and skills for free** is the greatest miracle of the modern education.
 
+书籍的主要作者 **Svetlin Nakov 博士**使用 [MIT 许可](https://opensource.org/licenses/MIT)，将这本书及其全部内容和示例代码作为**开源项目免费**提供给开发人员和 IT 社区。为什么这样做？因为书的主要作者和该项目的幕后工作人员认为**知识是为所有人提供的**，应该**免费共享**，因为开发人员应该以正确的方式学习使用加密技术，因为我们的世界需要更安全的软件，因为**免费共享知识和技能**是现代教育的最大奇迹。
+
 For the same reasons, which drive the people to build **Wikipedia** and share knowledge for free, to publish open-source projects in **GitHub** and share code for free, to develop open-source software like **GNU/Linux** and **Firefox** and distribute it for free, I write and publish this open-source cryptography book for developers. I want to **share knowledge and skills**, to help the developers to become **better professionals**. I personally as a developer, when I learn a new technology, I search for free resources and code examples in Internet and I am happy that someone creates and shares them for free. Now it is time to return back to the society and to the developer community and this makes me happy.
+
+出于同样的原因，这促使人们创立 **Wikipedia** 并免费共享知识、在 **GitHub** 上发布开源项目并免费共享代码以及开发 **GNU/Linux** 和 **Firefox** 等开源软件并免费分发，促使我为开发人员编写和出版此开源密码学书。我想**分享知识和技能**，以帮助开发人员变得**更加专业**。我个人是开发人员，当我学习一种新技术时，我从 Internet 上搜索免费的资源和示例代码，并且为有人免费创建和共享它们感到高兴。现在是时候回馈社会和开发者社区了，这让我感到高兴。
 
 ## About the Author: Dr. Svetlin Nakov
 
