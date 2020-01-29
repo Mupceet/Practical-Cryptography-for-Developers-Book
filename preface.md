@@ -2,7 +2,7 @@
 
 You are a **software developer**? And sometimes you need to use **cryptography** in your daily job, like hashes, encryption or digital signatures? And you think cryptography is complex and full of math and it is for nerds only? No, this is not true, every developer can learn **how to use cryptographic algorithms**. This book will show you how: with code examples and hands-on coding experience, with less math and more practice.
 
-你是一名**软件开发人员**吗？ 你是否在日常工作中有时候需要使用**密码学**知识，例如哈希，加密或数字签名？你是否认为密码学太复杂并且充满了数学知识，只有“书呆子”能理解？ 不，事实并非如此，每个开发人员都可以学会“**如何使用加密算法**“。本书将通过少量的数学知识、更多的示例代码与编程练习教会你如何使用。
+你是一名**软件开发人员**吗？ 你是否在日常工作中有时候需要使用**密码学**知识，例如哈希，加密或数字签名？你是否认为密码学太复杂并且充满了数学知识，只有“书呆子”能理解？ 不，事实并非如此，每个开发人员都可以学会“**如何使用加解密算法**“。本书将通过少量的数学知识、更多的示例代码与编程练习教会你如何使用。
 
 It is not required to be а strong mathematician or even not strong mathematician to **understand the cryptographic concepts from the developer perspective**. This book will teach you the basics of **applied cryptography** in almost free of math style, following a step-by-step approach with lots of **code examples** and **practical exercises** \(hands-on experience\), just like when you learn Web development, databases or mobile apps. Yes, if you can learn Web development or RESTful services, you can learn the practical aspect of cryptography as well. It is just like learning a new API or a new Web development framework: you learn a combination of **concepts** + **APIs** \(crypto algorithms implemented in crypto libraries\) + **tools** + **best practices** how to use these APIs and tools.
 
