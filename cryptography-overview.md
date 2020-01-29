@@ -10,7 +10,7 @@ Let's first introduce very shortly the basic **cryptography concepts**, that dev
 
 让我们首先简要介绍一下开发人员应该知道的基本**密码学概念**，例如密码**哈希函数**（SHA-256，SHA3，RIPEMD 等），**HMAC**（hashed message authentication code, 哈希消息验证码），**密钥派生**函数的密码（例如 Scrypt）， Diffie-Hellman 密钥交换协议，**对称密钥**加密方案（例如具有 CBC 和 CTR 块模式的 AES 密码）和具有公钥和私钥的**非对称密钥**加密方案（例如基于椭圆曲线加密的 RSA 与基于 secp256k1 曲线和 Ed25519 密码系统的 ECC），**数字签名**和 **ECDSA**，以及**熵**和安全**随机数生成**以及**量子安全密码学**的概念。
 
-### Encrypt / Decrypt Message - Live Demo
+### 信息加密/解密——在线演示
 
 As a simple **example**, we shall demonstrate message **encryption** + **decryption** using the **AES** encryption algorithm. Play with this online tool: [https://aesencryption.net](https://aesencryption.net).
 
