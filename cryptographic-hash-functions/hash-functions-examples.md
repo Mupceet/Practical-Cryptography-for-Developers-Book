@@ -35,7 +35,7 @@ Run the above code example: [https://repl.it/@nakov/Hashes-SHA2-SHA3-BLAKE2-RIPE
 
 The expected **output** from the above example looks like this:
 
-上面示例的预期**输出**如下：
+上述示例的预期**输出**如下：
 
 ```text
 SHA-256:    b'2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824'
