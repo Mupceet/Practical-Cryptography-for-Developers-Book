@@ -10,7 +10,7 @@ It is not required to be а strong mathematician or even not strong mathematicia
 
 From this book you will learn **how to use cryptographic algorithms and cryptosystems** like hashes, MAC codes and key derivation functions \(KFD\), random generators, key exchange protocols, symmetric ciphers, encryption schemes, asymmetric cryptosystems, public-key cryptography, elliptic curves, digital signatures and quantum-safe crypto algorithms, together with modern cryptographic tools and libraries.
 
-从这本书中，你将学会**如何使用密码算法和密码系统**，例如哈希、MAC代码和密钥推导函数（KFD）、随机生成器、密钥交换协议、对称密码、加密方案、非对称密码系统、公共密钥密码学、椭圆曲线、数字签名和量子安全加密算法，以及现代加密工具和库。
+从这本书中，你将学会**如何使用密码算法和密码系统**，例如哈希、MAC代码和密钥派生函数（KFD）、随机生成器、密钥交换协议、对称密码、加密方案、非对称密码系统、公共密钥密码学、椭圆曲线、数字签名和量子安全加密算法，以及现代加密工具和库。
 
 I am happy to publish this free **developer-friendly practical cryptography book**. It holds just **what developers need to know** in order to **use cryptography in their every day work**. It does not cover the internals of the algorithms and how to design symmetric ciphers, public-key cryptosystems or authentication schemes. It covers the basic understanding of the **core cryptographic concepts** and how to use them from developer's perspective: **libraries**, **tools**, **code examples**. This is what most developers need to know about cryptography. This is what this book gives to you for free.
 
