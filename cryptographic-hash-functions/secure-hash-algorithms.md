@@ -2,7 +2,7 @@
 
 In the past, many **cryptographic hash algorithms** were proposed and used by software developers. Some of them was **broken** \(like **MD5** and **SHA1**\), some are still considered secure \(like **SHA-2**, **SHA-3** and **BLAKE2**\). Let's review the most widely used cryptographic hash functions \(algorithms\).
 
-过去，软件开发人员提出并使用了许多**加密哈希算法**。其中有些已**被认为不安全**（例如 **MD5** 和 **SHA1**），有些仍被认为是安全的（例如 **SHA-2**，**SHA-3** 和 **BLAKE2**）。让我们回顾一下使用最广泛的加密哈希函数（算法）。
+至今，软件开发人员提出并使用了许多**加密哈希算法**。其中有些已**被认为不安全**（例如 **MD5** 和 **SHA1**），有些仍被认为是安全的（例如 **SHA-2**，**SHA-3** 和 **BLAKE2**）。让我们回顾一下使用最广泛的加密哈希函数（算法）。
 
 ## 安全哈希函数
 
@@ -14,7 +14,7 @@ In the past, many **cryptographic hash algorithms** were proposed and used by so
 
 [**SHA-2**](https://en.wikipedia.org/wiki/SHA-2) is a family of strong cryptographic hash functions: **SHA-256** \(256 bits hash\), **SHA-384** \(384 bits hash\), **SHA-512** \(512 bits hash\), etc. It is based on the cryptographic concept "[**Merkle–Damgård construction**](https://en.wikipedia.org/wiki/Merkle–Damgård_construction)" and is considered **highly secure**. SHA-2 is published as official crypto standard in the United States.
 
-[**SHA-2**](https://en.wikipedia.org/wiki/SHA-2) 是一个强加密哈希函数家族：**SHA-256**（256 位哈希）、**SHA-384**（384 位哈希）、**SHA-512**（512 位哈希）等，它基于密码学概念“[**Merkle–Damgård 结构**](https://en.wikipedia.org/wiki/Merkle–Damgård_construction)”，被认为是**高度安全**的。SHA-2 在美国作为官方密码标准发布。
+[**SHA-2**](https://en.wikipedia.org/wiki/SHA-2) 是一个强加密哈希函数家族：**SHA-256**（256 位哈希）、**SHA-384**（384 位哈希）、**SHA-512**（512 位哈希）等，它基于密码学概念“[**Merkle–Damgård 构造**](https://en.wikipedia.org/wiki/Merkle–Damgård_construction)”，被认为是**高度安全**的。SHA-2 在美国作为官方密码标准发布。
 
 **SHA-2** is widely used by developers and in cryptography and is considered cryptographically strong enough for modern commercial applications.
 
@@ -68,7 +68,7 @@ The hash function **Keccak-256**, which is used in the **Ethereum** blockchain, 
 
 The hash functions **SHAKE128\(msg, length\)** and **SHAKE256\(msg, length\)** are variants of the **SHA3-256** and **SHA3-512** algorithms, where the output message length can vary.
 
-哈希函数 **SHAKE128\(msg, length\)** 和 **SHAKE256\(msg, length\)** 是 **SHA3-256** 和 **SHA3-512** 算法的变体，其中输出消息的长度可以变化。
+哈希函数 **SHAKE128\(msg, length\)** 和 **SHAKE256\(msg, length\)** 是 **SHA3-256** 和 **SHA3-512** 算法的变体，其中输出信息的长度可以变化。
 
 Examples of SHA3 hashes:
 
@@ -125,7 +125,7 @@ The **160-bit** variant of **RIPEMD** is widely used in practice, while the othe
 
 As recommendation, **prefer using SHA-2 and SHA-3** instead of RIPEMD, because they are more stronger than RIPEMD, due to higher bit length and less chance for collisions.
 
-**推荐使用 SHA-2 和 SHA-3** 而不是 RIPEMD，因为它们比 RIPEMD 强度更高，因为它们的位长更高，碰撞的机会更少。
+**推荐使用 SHA-2 和 SHA-3** 而不是 RIPEMD，因为它们比 RIPEMD 强度更高，因为它们的位数更多，碰撞的可能性更小。
 
 Examples of RIPEMD hashes:
 
@@ -148,11 +148,11 @@ All of the above popular secure hash functions \(SHA-2, SHA-3, BLAKE2, RIPEMD\) 
 
 You can find in Internet that **SHA1 collisions** can be practically generated and this results in algorithms for creating **fake digital signatures**, demonstrated by two different signed PDF documents which hold different content, but have the same hash value and the same digital signature. See [https://shattered.io](https://shattered.io).
 
-你可以在互联网上找到，**SHA1 碰撞**可以实际生成，导致存在创建**假数字签名**的算法，例如两个不同的PDF文档，它们包含不同的内容，但具有相同的哈希值和相同的数字签名。参见https://shattered.io。
+你可以在互联网上找到，**SHA1 碰撞**可以实际生成，导致存在创建**假数字签名**的算法，例如两个不同的PDF文档，它们包含不同的内容，但具有相同的哈希值和相同的数字签名。参见 [https://shattered.io](https://shattered.io)。
 
 Avoid using of the following hash algorithms, which are considered **insecure** or have disputable security: [**MD2**](https://en.wikipedia.org/wiki/MD2_%28hash_function), [**MD4**](https://en.wikipedia.org/wiki/MD4), [**MD5**](https://en.wikipedia.org/wiki/MD5), [**SHA-0**](https://en.wikipedia.org/wiki/SHA-1#SHA-0), [**SHA-1**](https://en.wikipedia.org/wiki/SHA-1), [**Panama**](https://en.wikipedia.org/wiki/Panama_%28cryptography), [**HAVAL**](https://en.wikipedia.org/wiki/HAVAL) \(disputable security, collisions found for HAVAL-128\), [**Tiger**](https://en.wikipedia.org/wiki/Tiger_%28hash_function) \(disputable, weaknesses found\), [**SipHash**](https://en.wikipedia.org/wiki/SipHash) \(it is not a cryptographic hash function\).
 
-避免使用下列哈希算法，它们被认为是不安全的或具有可争议的安全性:[**MD2**](https://en.wikipedia.org/wiki/MD2_%28hash_function)、[**MD4**](https://en.wikipedia.org/wiki/MD4)、[**MD5**](https://en.wikipedia.org/wiki/MD5)、[**SHA-0**](https://en.wikipedia.org/wiki/SHA-1#SHA-0)、[**SHA-1**](https://en.wikipedia.org/wiki/SHA-1)、[**Panama**](https://en.wikipedia.org/wiki/Panama_%28cryptography)、[**HAVAL**](https://en.wikipedia.org/wiki/HAVAL)（具有争议的安全性，HAVAL-128 找到了冲突）、[**Tiger**](https://en.wikipedia.org/wiki/Tiger_%28hash_function)（具有争议，找到了弱点）、[**SipHash**](https://en.wikipedia.org/wiki/SipHash)（它不是一个加密哈希函数）。
+避免使用下列哈希算法，它们被认为是不安全的或安全性具有争议：[**MD2**](https://en.wikipedia.org/wiki/MD2_%28hash_function)、[**MD4**](https://en.wikipedia.org/wiki/MD4)、[**MD5**](https://en.wikipedia.org/wiki/MD5)、[**SHA-0**](https://en.wikipedia.org/wiki/SHA-1#SHA-0)、[**SHA-1**](https://en.wikipedia.org/wiki/SHA-1)、[**Panama**](https://en.wikipedia.org/wiki/Panama_%28cryptography)、[**HAVAL**](https://en.wikipedia.org/wiki/HAVAL)（安全性具有争议，HAVAL-128 找到了冲突）、[**Tiger**](https://en.wikipedia.org/wiki/Tiger_%28hash_function)（安全性具有争议，找到了弱点）、[**SipHash**](https://en.wikipedia.org/wiki/SipHash)（它不是一个加密哈希函数）。
 
 ### 其他安全哈希函数
 
@@ -163,7 +163,7 @@ The below functions are popular strong cryptographic hash functions, alternative
 * [**Whirlpool**](https://en.wikipedia.org/wiki/Whirlpool_%28hash_function) is secure cryptographic hash function, which produces 512-bit hashes.
 * [**Whirlpool**](https://en.wikipedia.org/wiki/Whirlpool_%28hash_function) 是安全的加密哈希函数，可产生 512 位哈希值。
 * [**SM3**](https://tools.ietf.org/id/draft-oscca-cfrg-sm3-01.html) is the crypto hash function, officialy standartized by the **Chinese government**. It is similar to SHA-256 \(based on the Merkle–Damgård construction\) and produces 256-bit hashes.
-* [**SM3**](https://tools.ietf.org/id/draft-oscca-cfrg-sm3-01.html) 是加密哈希函数，由**中国政府**正式制定。它类似于 SHA-256（基于 Merkle-Damgård 结构）并产生 256 位哈希。
+* [**SM3**](https://tools.ietf.org/id/draft-oscca-cfrg-sm3-01.html) 是加密哈希函数，由**中国政府**正式制定。它类似于 SHA-256（基于 Merkle-Damgård 构造）并产生 256 位哈希。
 * [**GOST**](https://en.wikipedia.org/wiki/GOST_%28hash_function) \(GOST R 34.11-94\) is secure cryptographic hash function, the Russian national standard, described in [RFC 4357](https://tools.ietf.org/html/rfc4357). It produces 256-bit hashes.
 * [**GOST**](https://en.wikipedia.org/wiki/GOST_%28hash_function) 是俄罗斯国家标准的安全加密哈希函数，在 [RFC 4357](https://tools.ietf.org/html/rfc4357) 中有描述。它产生 256 位的哈希值。
 
@@ -182,7 +182,7 @@ The below functions are less popular alternatives to SHA-2, SHA-3 and BLAKE, fin
 
 As of Oct 2018, **no collisions are known** for: **SHA256**, **SHA3-256**, **Keccak-256**, **BLAKE2s**, **RIPEMD160** and few others.
 
-截至 2018 年 10 月，尚无已知的碰撞发生：**SHA256**、**SHA3-256**、**Keccak-256**、**BLAKE2s**、**RIPEMD160**等。
+截至 2018 年 10 月，以下哈希函数尚无已知的碰撞发生：**SHA256**、**SHA3-256**、**Keccak-256**、**BLAKE2s**、**RIPEMD160** 等。
 
 **Brute forcing** to find hash function collision as general costs: 2128 for SHA256 / SHA3-256 and 280 for RIPEMD160.
 

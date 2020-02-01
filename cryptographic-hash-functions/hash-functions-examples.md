@@ -74,7 +74,7 @@ Run the above code example: [https://repl.it/@nakov/Keccak256-in-Python](https:/
 
 The **output** from the above examples is:
 
-上述示例的**输出**为：
+上述示例的预期**输出**为：
 
 ```text
 Keccak256: b'1c8aff950685c2ed4bc3174f3472287b56d9517b9c948127319a09a7a36deac8'

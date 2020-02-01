@@ -2,7 +2,7 @@
 
 In this exercise session, you are assigned to write some code to **calculate cryptographic hashes**. Write a program to **calculate hashes** of given text message: **SHA-224**, **SHA-256**, **SHA3-224**, **SHA3-384**, **Keccak-384** and **Whirlpool**. Write your code in programming language of choice.
 
-在本练习中，你需要编写一些代码来计算加密哈希值。需要编写程序来计算给定文本消息的不同哈希值：**SHA-224**，**SHA-256**，**SHA3-224**，**SHA3-384**，**Keccak-384** 和 **Whirlpool**。你可以自行选择编程语言来编写代码。
+在本练习中，你需要编写一些代码来计算加密哈希值。需要编写程序来计算给定文本信息的不同哈希值：**SHA-224**，**SHA-256**，**SHA3-224**，**SHA3-384**，**Keccak-384** 和 **Whirlpool**。你可以自行选择编程语言来编写代码。
 
 ## 计算 **SHA-224 哈希值**
 
@@ -34,7 +34,7 @@ In this exercise session, you are assigned to write some code to **calculate cry
 | :--- | :--- |
 | hello | dcef6fb7908fd52ba26aaba75121526abbf1217f1c0a31024652d134d3e32fb4cd8e9c703b8f43e7277b59a5cd402175 |
 
-## 计算 **Whirlpool \(512 Bit\) 哈希值**
+## 计算 **Whirlpool \(512 位\) 哈希值**
 
 | **Input** | **Output** |
 | :--- | :--- |

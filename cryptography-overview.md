@@ -8,19 +8,19 @@
 
 Let's first introduce very shortly the basic **cryptography concepts**, that developers should know, like cryptographic **hash functions** \(SHA-256, SHA3, RIPEMD and others\), **HMAC** \(hashed message authentication code\), password to **key derivation** functions \(like **Scrypt**\), the Diffie-Hellman key-exchange protocol, **symmetric key** encryption schemes \(like the **AES** cipher with CBC and CTR block modes\) and **asymmetric key** encryption schemes with public and private keys \(like the **RSA** cipher and elliptic curves-based cryptography / **ECC**, the secp256k1 curve and the Ed25519 cryptosystem\), **digital signatures** and **ECDSA**, as well as the concept of **entropy** and secure **random number** generation and **quantum-safe cryptography**.
 
-让我们首先简要介绍一下开发人员应该知道的基本**密码学概念**，例如密码**哈希函数**（SHA-256，SHA3，RIPEMD 等），**HMAC**（hashed message authentication code, 哈希消息验证码），**密钥派生**函数的密码（例如 Scrypt）， Diffie-Hellman 密钥交换协议，**对称密钥**加密方案（例如具有 CBC 和 CTR 块模式的 AES 密码）和具有公钥和私钥的**非对称密钥**加密方案（例如基于椭圆曲线加密的 RSA 与基于 secp256k1 曲线和 Ed25519 密码系统的 ECC），**数字签名**和 **ECDSA**，以及**熵**和安全**随机数生成**以及**量子安全密码学**的概念。
+让我们首先简要介绍一下开发人员应该知道的基本**密码学概念**，例如密码**哈希函数**（SHA-256，SHA3，RIPEMD 等），**HMAC**（hashed message authentication code, 哈希信息验证码），**密钥派生**函数的密码（例如 Scrypt）， Diffie-Hellman 密钥交换协议，**对称密钥**加密方案（例如具有 CBC 和 CTR 块模式的 AES 密码）和具有公钥和私钥的**非对称密钥**加密方案（例如基于椭圆曲线加密的 RSA 与基于 secp256k1 曲线和 Ed25519 密码系统的 ECC），**数字签名**和 **ECDSA**，以及**熵**和安全**随机数生成**以及**量子安全密码学**的概念。
 
 ### 信息加密/解密——在线演示
 
 As a simple **example**, we shall demonstrate message **encryption** + **decryption** using the **AES** encryption algorithm. Play with this online tool: [https://aesencryption.net](https://aesencryption.net).
 
-我们可以使用此在线工具：[https://aesencryption.net](https://aesencryption.net) 演示一个使用 **AES** 加密算法对消息进行**加密** + **解密**的简单示例。
+我们可以使用此在线工具：[https://aesencryption.net](https://aesencryption.net) 演示一个使用 **AES** 加密算法对信息进行**加密** + **解密**的简单示例。
 
 ![](.gitbook/assets/encrypt-decrypt-live-demo.jpg)
 
 We shall learn later that behind this simple **AES encryption**, there are **many algorithms and settings** hidden inside, like password to key-derivation function and its parameters, block cipher mode, cipher initial vector, message authentication code and others.
 
-稍后我们将了解到，在这种简单的 **AES 加密**背后，内部隐藏了**许多算法和设置**，例如密钥派生函数及其参数，分组密码模式，密码初始向量，消息验证码等。
+稍后我们将了解到，在这种简单的 **AES 加密**背后，内部隐藏了**许多算法和设置**，例如密钥派生函数及其参数，分组密码模式，密码初始向量，信息验证码等。
 
 ## 密码学是什么？
 
@@ -42,15 +42,15 @@ Cryptography deals with **keys** \(large secret numbers\) and in many scenarios 
 
 密码学要解决生成**密钥**（用于保密的大数字）的问题，在许多情况下，这些密钥是使用**密钥派生算法**（例如 PBKDF2 和 Scrypt）从数字，密码或密码短语中**派生**的。
 
-### 数字签名和消息认证
+### 数字签名和信息认证
 
 Cryptography provides means of **digital signing of messages** which guarantee message authenticity, integrity and non-repudiation. Most digital signature algorithms \(like DSA, ECDSA and EdDSA\) use **asymmetric key pair** \(private and public key\): the message is **signed** by the private key and the signature is **verified** by the corresponding public key. In the bank systems **digital signatures** are used to sign and approve payments. In blockchain signed transactions allow users to transfer a blockchain asset from one address to another.
 
-密码学提供了**对消息进行数字签名**的方法，可以保证消息的真实性，完整性和不可否认性。 大多数数字签名算法（例如 DSA，ECDSA 和 EdDSA）都使用**非对称密钥对**（私钥和公钥）：消息由私钥**签名**，签名由相应的公钥**验证**。 在银行系统中，**数字签名**用于签署和批准付款。 在区块链中，签名交易允许用户将区块链资产从一个地址转移到另一个地址。
+密码学提供了**对信息进行数字签名**的方法，可以保证信息的真实性，完整性和不可否认性。 大多数数字签名算法（例如 DSA，ECDSA 和 EdDSA）都使用**非对称密钥对**（私钥和公钥）：信息由私钥**签名**，签名由相应的公钥**验证**。 在银行系统中，**数字签名**用于签署和批准付款。 在区块链中，签名交易允许用户将区块链资产从一个地址转移到另一个地址。
 
 Cryptography deals with **message authentication** algorithms \(like HMAC\) and message authentication codes \(MAC codes\) to prove message authenticity, integrity and authorship. Authentication is used side by side with encryption, to ensure secure communication.
 
-密码学提供了**消息验证**算法（如 HMAC）和消息验证码（MAC 码），以证明消息的真实性、完整性和原作者身份。认证与加密一起使用，以确保安全的通信。
+密码学提供了**信息验证**算法（如 HMAC）和信息验证码（MAC 码），以证明信息的真实性、完整性和原作者身份。认证与加密一起使用，以确保安全的通信。
 
 ### 安全随机数
 
@@ -62,13 +62,13 @@ Cryptography uses **random numbers** and deals with **entropy** \(unpredictable 
 
 Cryptography defines **key-exchange algorithms** \(like Diffie-Hellman key exchange and ECDH\) and **key establishment schemes**, used to securely establish encryption **keys** between two parties that intend to transmit messages securely using **encryption**. Such algorithms are performed typically when a new secure connection between two parties is established, e.g. when you open a modern Web site or connect to the WiFi network.
 
-密码学定义了**密钥交换算法**（如 Diffie-Hellman 密钥交换和 ECDH）和**密钥建立方案**，用于在希望使用**加密**安全传输消息的双方之间安全地建立加密**密钥**。这种算法通常在双方之间建立新的安全连接时执行，例如，当您打开一个现代网站或连接到 WiFi 网络时。
+密码学定义了**密钥交换算法**（如 Diffie-Hellman 密钥交换和 ECDH）和**密钥建立方案**，用于在希望使用**加密**安全传输信息的双方之间安全地建立加密**密钥**。这种算法通常在双方之间建立新的安全连接时执行，例如，当您打开一个现代网站或连接到 WiFi 网络时。
 
 ### 加密哈希和密码哈希
 
 Cryptography provides **cryptographic hash functions** \(like SHA-3 and BLAKE2\), which transform messages to **message digest** \(hash of fixed length\), which cannot be reversed back to the original message and almost uniquely identifies the input. In **blockchain** systems, for example, hashes are used to generate blockchain addresses, transaction ID and in many other algorithms and protocols. In **Git** cryptographic hashes are used for generating unique ID for files and commits.
 
-密码学提供**加密的哈希函数**（如 SHA-3 和 BLAKE2），它们将消息转换为**消息摘要**（固定长度的哈希），消息摘要不能将反推得到原始消息，并且几乎惟一地标识输入。例如，在**区块链**系统中，哈希用于生成区块链地址、事务 ID 和许多其他算法和协议中。在 **Git** 中，密码哈希用于生成文件和提交的唯一 ID。
+密码学提供**加密的哈希函数**（如 SHA-3 和 BLAKE2），它们将信息转换为**信息摘要**（固定长度的哈希），信息摘要不能将反推得到原始信息，并且几乎惟一地标识输入。例如，在**区块链**系统中，哈希用于生成区块链地址、事务 ID 和许多其他算法和协议中。在 **Git** 中，密码哈希用于生成文件和提交的唯一 ID。
 
 **Password hashing** and password to **key derivation functions** \(like Scrypt and Argon2\) protect user passwords and password encrypted documents and data by securely deriving a hash \(or key\) from a text-based passwords, injecting random parameters \(salt\) and using a lot of iterations and computing resources to make password cracking slow.
 
