@@ -43,4 +43,3 @@ In this exercise session, you are assigned to write some code to **calculate cry
 **Hints**: follow the Python examples, given earlier in this section or search in Internet.
 
 **提示**：参考本节之前给出的 Python 示例，或在 Internet 上搜索。
-

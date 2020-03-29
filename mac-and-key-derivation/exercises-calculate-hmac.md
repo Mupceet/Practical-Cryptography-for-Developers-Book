@@ -1,6 +1,8 @@
-# Exercises: Calculate HMAC
+# 练习：计算 HMAC
 
 Write a program to **calculate HMAC-SHA-384** of given text **message** by given **key**. Write your code in programming language of choice.
+
+编写程序，根据给定的**密钥**计算给定文本**消息**的 **HMAC-SHA-384**。自行选择编程语言来编写代码。
 
 | **Input** | **Output** |
 | :--- | :--- |
@@ -9,3 +11,4 @@ Write a program to **calculate HMAC-SHA-384** of given text **message** by given
 
 **Hints**: follow the Python examples, given earlier in this section or search in Internet.
 
+**提示**：参考本节之前给出的 Python 示例，或在 Internet 上搜索。
